@@ -12,44 +12,59 @@
 
 <body>
     <header id="home">
-        <div class="row-limit-size bg-header">
+        <div class="row-limit-size" id="bg-header">
             <nav id="main-menu" class="text-white uppercase">
                 <ul class="display-flex">
-                    <li><a href="#home"></a>home</li>
-                    <li><a href="#artist"></a>artist</li>
-                    <li><a href="#faq"></a>faq</li>
-                    <li><a href="#contact"></a>contact</li>
+                    <li><a href="#home" class="text-white">home</a></li>
+                    <li><a href="#artist" class="text-white">artist</a></li>
+                    <li><a href="#faq" class="text-white">faq</a></li>
+                    <li><a href="#contact" class="text-white">contact</a></li>
                 </ul>
-                <figure id="logo" class="display-flex">
-                    <img src="../First-project/img/logo/logo-white-removebg.png" alt="InkArius studio tattoo"
-                        height="100px">
-                </figure>
             </nav>
+            <figure id="logo" class="display-flex">
+                <img src="../First-project/img/logo/logo-white-removebg.png" alt="InkArius studio tattoo"
+                    height="100px">
+            </figure>
             <div id="title-h1" class="text-white display-flex">
                 <h1>InkArius</h1>
                 <p class="uppercase">studio tattoo</p>
             </div>
         </div>
     </header>
-    <section id="section-1" class="row-limit-size">
-        <div class="section-1-container text-white">
+    <section id="artist" class="row-limit-size">
+        <div class="section1 text-white">
             <figure>
                 <img src="../First-project/img/artists/artist1.png" alt="artist 1" height="300px" width="200px">
             </figure>
             <div>
                 <h2 class="uppercase">artist</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet voluptatem rerum      recusandae debitis facere non laborum neque. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet voluptatem rerum recusandae
+                    debitis facere non laborum neque. </p>
             </div>
             <figure>
                 <img src="../First-project/img/artists/artist2.jpg" alt="artist 2" height="300px" width="200px">
             </figure>
         </div>
     </section>
-    <section id="section-3-slider" class="row-limit-size">
+    <section id="slider" class="row-limit-size">
+            <div id="window-slider">
+                <div id="list-slide" style="margin-left: -500px;">
+                    <div class="slide"><img src="./img/slide/1.jpg" alt="tattoo" height="500px"></div>
+                    <div class="slide"><img src="./img/slide/2.jpg" alt="tattoo" height="500px"></div>
+                    <div class="slide"><img src="./img/slide/3.jpg" alt="tattoo" height="500px"></div>
+                    <div class="slide"><img src="./img/slide/4.jpg" alt="tattoo" height="500px"></div>
+                    <div class="slide"><img src="./img/slide/5.jpg" alt="tattoo" height="500px"></div>
+                    <div class="slide"><img src="./img/slide/6.jpg" alt="tattoo" height="500px"></div>
+                </div>
+            </div>
+            <div id="button">
+                <div id="left"><img src="./img/Ellipse1.png" alt="right gallery button" height="40px"></div>
+                <div id="right"><img src="./img/Ellipse2.png" alt="left gallery button" height="40px"></div>
+            </div>
     </section>
-    <section id="section-4 faq" class="row-limit-size">
+    <section id="faq" class="row-limit-size">
     </section>
-    <section id="section-5 contact" class="row-limit-size">
+    <section id="contact" class="row-limit-size">
     </section>
     <footer class="row-limit-size"></footer>
     <script src="./js/script.js"></script>

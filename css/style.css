@@ -5,15 +5,25 @@
     padding: 0;
 }
 
- a {
+body {
+    background-color: #222;
+}
+
+a {
     text-decoration: none;
- }
- 
+}
+
 .row-limit-size {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
+
+.display-flex {
+    display: flex;
+}
+
+/*TEXTE*/
 
 .text-white {
     color: aliceblue;
@@ -23,55 +33,130 @@
     text-transform: uppercase;
 }
 
-.display-flex {
-    display: flex;
-}
-
-body {
-    background-color: #222;
-}
-
 /*Header*/
 
-.bg-header {
-    height: 500px;
+#bg-header {
+    width: 100%;
     background: url(../img/img-bg-header.png) center center / cover no-repeat;
 }
 
-nav#main-menu > ul {
+nav#main-menu>ul {
     list-style-type: none;
 }
 
-nav#main-menu > ul > li  {
+nav#main-menu>ul>li {
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo {
-    padding: 20px;
+    padding: 10px;
+    align-content: center;
     align-self: center;
 }
 
 #title-h1 {
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 h1 {
     font-weight: 400;
-    font-size: 96px;
+    font-size: 8rem;
     line-height: 120px;
 }
 
 
 /*Container*/
-.section-1-container {
+
+.section1 {
     padding: 50px;
     display: flex;
     background-color: #111;
 }
 
+.section1>div {
+    padding: 50px;
+    align-self: center;
+}
+
+.section1>div>h2 {
+    text-align: center;
+}
+
+.section1>div>p {
+    padding: 10px;
+    text-align: center;
+}
+
+/*Slide*/
+
+#section-3-slider {
+    background-color: #333;
+    
+}
+
+#slider {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#window-slider {
+    margin-top: 50px;
+    width: 80vw;
+    max-width: 400px;
+    height: 600px;
+}
+
+#list-slide {
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.slide {
+    margin: 0 20px;
+}
+
+#button {
+    display: flex;
+}
+
+#left,
+#right {
+    line-height: 50px;
+    padding: 0 50px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#left:hover, #right:hover {
+    opacity: 1;
+}
+
+
+
 /*Footer*/
 
-/*TEXTE*/
 
+/*Screen devises*/
 
+@media screen and (max-width: 500px) {
+
+    #main-menu>figure>img {
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #title-h1>p {
+        font-size: .8rem;
+    }
+
+    .section1 {
+        flex-flow: column wrap;
+    }
+}
