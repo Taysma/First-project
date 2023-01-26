@@ -107,7 +107,10 @@ h1 {
     width: 80vw;
     max-width: 400px;
     height: 500px;
+<<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> 55d76c0240eb198fe63cb5e2b9aad57ce0e0aef4
 }
 
 #list-slide {
@@ -151,7 +154,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55d76c0240eb198fe63cb5e2b9aad57ce0e0aef4
 /*Location*/
 
 #sous-section3 {
@@ -229,7 +235,10 @@ form>p {
 }
 
 input {
+<<<<<<< HEAD
     border: #000;
+=======
+>>>>>>> 55d76c0240eb198fe63cb5e2b9aad57ce0e0aef4
     height: 20px;
 }
 
