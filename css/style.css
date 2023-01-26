@@ -33,6 +33,10 @@ a {
     text-transform: uppercase;
 }
 
+.sans-serif-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*Header*/
 
 #bg-header {
@@ -46,7 +50,7 @@ nav#main-menu>ul {
 
 nav#main-menu>ul>li {
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 #logo {
@@ -69,44 +73,41 @@ h1 {
 
 /*Container*/
 
-.section1 {
+#section1 {
     padding: 50px;
     display: flex;
     background-color: #111;
 }
 
-.section1>div {
-    padding: 50px;
+#section1>div {
+    padding: 25px;
     align-self: center;
 }
 
-.section1>div>h2 {
+#section1>div>h2 {
     text-align: center;
 }
 
-.section1>div>p {
+#section1>div>p {
     padding: 10px;
     text-align: center;
 }
 
 /*Slide*/
 
-#section-3-slider {
-    background-color: #333;
-    
-}
-
 #slider {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: #333;
 }
 
 #window-slider {
-    margin-top: 50px;
+    margin-top: 80px;
     width: 80vw;
     max-width: 400px;
-    height: 600px;
+    height: 500px;
+    overflow: hidden;
 }
 
 #list-slide {
@@ -114,9 +115,6 @@ h1 {
     transition: all .5s ease-in-out;
 }
 
-.slide {
-    margin: 0 20px;
-}
 
 #button {
     display: flex;
@@ -124,8 +122,7 @@ h1 {
 
 #left,
 #right {
-    line-height: 50px;
-    padding: 0 50px;
+    padding: 50px;
     opacity: 0.5;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -135,14 +132,138 @@ h1 {
     opacity: 1;
 }
 
+/*About Us*/
 
+#section2 {
+    padding: 50px;
+    background-color: #111; 
+}
+
+#section2>div {
+    padding: 50px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+#section2>div>figure {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+
+/*Location*/
+
+#sous-section3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center; 
+    padding: 30px 50px 0;
+    background-color: #000;
+    border: #000 solid .4px;
+    border-top-left-radius: 12%;
+    border-bottom-left-radius: 12%;
+
+}
+
+#sous-section3>div#section3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 15px;
+    text-align: center;
+}
+
+#sous-section3>div#section3-text>h2 {
+    color: #888;
+    font-size:medium;
+    padding: 8px;
+}
+
+#sous-section3>div>p {
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+#sous-section3>figure {
+    padding-top: 50px;
+}
+
+#sous-section3>div.mapouter {
+    padding-top: 50px;
+}
+
+/*Formulaire*/
+
+#contact>div {
+    padding-top: 50px;
+    background-color: #333;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-wrapper>div {
+    padding: 50px;
+    display: flex;  
+}
+
+fieldset {
+    border: #fff solid .4px;
+}
+
+form {
+    margin: 30px;
+}
+
+form>label {
+    line-height: 30px;
+}
+
+form>p {
+    padding-top: 10px;
+}
+
+input {
+    border: #000;
+    height: 20px;
+}
+
+input[type=radio]{
+    margin: 5px 0;
+}
+
+input[type=submit]{
+    width: 50%;
+    height: 50px;
+    margin-bottom:  10px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#textarea {
+    width: 100%;
+    resize: none;
+}
 
 /*Footer*/
 
+ footer>p {
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+ }
 
-/*Screen devises*/
+/*Screen devise*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     #main-menu>figure>img {
         height: 120px;
@@ -156,7 +277,14 @@ h1 {
         font-size: .8rem;
     }
 
-    .section1 {
+    #section1 {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    #form-wrapper>div {
+        display: flex;
         flex-flow: column wrap;
     }
 }
