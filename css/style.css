@@ -287,4 +287,13 @@ input[type=submit]{
         display: flex;
         flex-flow: column wrap;
     }
+
+    #sous-section3 {
+        border-radius: 0;
+        padding: 30px 11px;
+    }
+
+    #sous-section3>figure, .mapouter {
+        display: none;
+    }
 }
